@@ -18,7 +18,7 @@ export default function HeroSection() {
 						<h1 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600">
 							Rakesh Geddam
 						</h1>
-						<h2 className="text-2xl md:text-4xl font-bold text-gray-900">Sotware/AI & Data Engineer</h2>
+						<h2 className="text-2xl md:text-4xl font-bold text-gray-900">Software/AI & Data Engineer</h2>
 						<p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
 							Experienced Software Engineer with a strong background in full stack development, cloud data engineering, and AI/ML solutions. Proven expertise in building scalable applications, and delivering impactful business solutions.
 						</p>
@@ -48,9 +48,8 @@ export default function HeroSection() {
 						<div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
 							{/* Frontend Layer */}
 							<div
-								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-									selectedStack === 'frontend' ? 'bg-blue-50 border-blue-200' : 'bg-gray-50 hover:bg-gray-100 border-transparent'
-								}`}
+								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${selectedStack === 'frontend' ? 'bg-blue-50 border-blue-200' : 'bg-gray-50 hover:bg-gray-100 border-transparent'
+									}`}
 								onMouseEnter={() => setSelectedStack('frontend')}
 								onMouseLeave={() => setSelectedStack(null)}
 							>
@@ -73,9 +72,8 @@ export default function HeroSection() {
 
 							{/* Backend Layer */}
 							<div
-								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-									selectedStack === 'backend' ? 'bg-purple-50 border-purple-200' : 'bg-gray-50 hover:bg-gray-100 border-transparent'
-								}`}
+								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${selectedStack === 'backend' ? 'bg-purple-50 border-purple-200' : 'bg-gray-50 hover:bg-gray-100 border-transparent'
+									}`}
 								onMouseEnter={() => setSelectedStack('backend')}
 								onMouseLeave={() => setSelectedStack(null)}
 							>
@@ -98,9 +96,8 @@ export default function HeroSection() {
 
 							{/* DevOps Layer */}
 							<div
-								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-									selectedStack === 'devops' ? 'bg-teal-50 border-teal-200' : 'bg-gray-50 hover:bg-gray-100 border-transparent'
-								}`}
+								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${selectedStack === 'devops' ? 'bg-teal-50 border-teal-200' : 'bg-gray-50 hover:bg-gray-100 border-transparent'
+									}`}
 								onMouseEnter={() => setSelectedStack('devops')}
 								onMouseLeave={() => setSelectedStack(null)}
 							>
