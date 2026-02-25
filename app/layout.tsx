@@ -1,52 +1,42 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import './globals.css';
 
-const geistSans = Geist({
-	variable: '--font-geist-sans',
-	subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-	variable: '--font-geist-mono',
+const inter = Inter({
+	variable: '--font-inter',
 	subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-	title: 'Rakesh Geddam - Tech Optimist',
+	title: 'Rakesh Geddam - Software Engineer',
 	description:
-		'Welcome to my portfolio! I am a passionate full-stack developer who bridges the gap between frontend and backend development. Specializing in creating complete web solutions, from beautiful user interfaces to robust server architectures.',
+		'Portfolio of Rakesh Geddam, a Software Engineer specializing in full-stack development, cloud data engineering, and AI/ML solutions.',
 	keywords: [
-		'Full-Stack Developer',
 		'Software Engineer',
-		'Frontend Development',
-		'Backend Development',
+		'Full-Stack Developer',
+		'Data Engineer',
+		'AI/ML',
 		'React',
 		'Next.js',
-		'Node.js',
+		'Python',
 		'TypeScript',
-		'Database Design',
-		'API Development',
-		'Cloud Solutions',
-		'DevOps',
-		'System Architecture',
-		'Web Development',
-		'[Your Name]',
+		'AWS',
+		'Rakesh Geddam',
 	],
-	authors: [{ name: '[Your Name]' }],
-	creator: '[Your Name]',
+	authors: [{ name: 'Rakesh Geddam' }],
+	creator: 'Rakesh Geddam',
 	openGraph: {
-		title: '[Your Name] - Full-Stack Developer Portfolio',
+		title: 'Rakesh Geddam - Software Engineer',
 		description:
-			'Passionate full-stack developer creating complete web solutions. Explore my projects and technical expertise across the entire development stack.',
-		url: 'https://your-domain.com',
-		siteName: '[Your Name] - Portfolio',
+			'Portfolio of Rakesh Geddam, a Software Engineer specializing in full-stack development, cloud data engineering, and AI/ML solutions.',
+		url: 'https://rakeshgeddam.github.io',
+		siteName: 'Rakesh Geddam - Portfolio',
 		images: [
 			{
 				url: '/og-image.jpg',
 				width: 1200,
 				height: 630,
-				alt: '[Your Name] - Full-Stack Developer Portfolio',
+				alt: 'Rakesh Geddam - Software Engineer',
 			},
 		],
 		locale: 'en_US',
@@ -54,10 +44,10 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: '[Your Name] - Full-Stack Developer',
+		title: 'Rakesh Geddam - Software Engineer',
 		description:
-			'Passionate full-stack developer creating complete web solutions. Explore my projects and technical expertise across the entire development stack.',
-		creator: '@yourusername',
+			'Portfolio of Rakesh Geddam, a Software Engineer specializing in full-stack development, cloud data engineering, and AI/ML solutions.',
+		creator: '@rakeshgeddam',
 		images: ['/og-image.jpg'],
 	},
 	robots: {
@@ -79,8 +69,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+		<html lang="en" className="scroll-smooth">
+			<body className={`${inter.variable} font-sans antialiased bg-background text-foreground`}>{children}</body>
 		</html>
 	);
 }

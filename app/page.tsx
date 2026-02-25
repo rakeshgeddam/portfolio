@@ -2,16 +2,17 @@
 
 import HeroSection from './components/HeroSection';
 import ProjectsSection from './components/ProjectsSection';
-import ContactSection from './components/ContactSection';
 import ExperienceSection from './components/ExperienceSection';
+import PublicationsSection from './components/PublicationsSection';
+import ContactSection from './components/ContactSection';
 
 export default function FullStackPortfolio() {
 	return (
-		<main className="min-h-screen bg-gradient-to-b from-gray-50 to-white text-gray-900">
+		<main className="min-h-screen bg-background text-foreground selection:bg-accent selection:text-white">
 			<HeroSection />
-
 			<ProjectsSection />
 			<ExperienceSection />
+			<PublicationsSection />
 			<ContactSection />
 		</main>
 	);

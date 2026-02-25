@@ -1,0 +1,23 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" />
+      <stop offset="100%" stop-color="#0F766E" />
+    </linearGradient>
+    <pattern id="grid3" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#grad3)" />
+  <rect width="800" height="600" fill="url(#grid3)" />
+  <g transform="translate(300, 150)">
+    <!-- Database & Spark Icon -->
+    <ellipse cx="100" cy="50" rx="80" ry="30" fill="none" stroke="#10B981" stroke-width="10"/>
+    <path d="M20 50 L20 150 C20 180 180 180 180 150 L180 50" fill="none" stroke="#10B981" stroke-width="10"/>
+    <path d="M20 100 C20 130 180 130 180 100" fill="none" stroke="#10B981" stroke-width="10"/>
+    
+    <!-- Lightning Bolt -->
+    <path d="M120 20 L70 120 L110 120 L90 200 L150 90 L110 90 Z" fill="#F59E0B" stroke="#F59E0B" stroke-width="4" stroke-linejoin="round"/>
+  </g>
+  <text x="400" y="500" font-family="system-ui, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="2">APACHE SPARK ETL</text>
+</svg>

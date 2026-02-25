@@ -1,3 +1,5 @@
+'use client';
+
 import { motion } from 'framer-motion';
 
 const experiences = [
@@ -38,34 +40,48 @@ const experiences = [
 
 export default function ExperienceSection() {
   return (
-    <section className="py-20 px-4 bg-gray-50">
-      <div className="max-w-5xl mx-auto">
-        <motion.h2
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+    <section id="experience" className="py-24 px-6 bg-background">
+      <div className="max-w-4xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl font-bold mb-16 text-center text-gray-900"
+          className="mb-16"
         >
-          Professional Experience
-        </motion.h2>
-        <div className="space-y-12">
-          {experiences.map((exp) => (
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Experience</h2>
+          <p className="text-foreground/60 mt-4 text-lg">My professional journey in software engineering and research.</p>
+        </motion.div>
+
+        <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-surface-border dark:before:via-surface-darkBorder before:to-transparent">
+          {experiences.map((exp, index) => (
             <motion.div
               key={exp.company + exp.title + exp.period}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl border border-gray-200 shadow-lg p-8 flex flex-col md:flex-row gap-8"
+              transition={{ delay: index * 0.1 }}
+              className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
             >
-              <div className="md:w-1/3 flex flex-col justify-center items-start">
-                <h3 className="text-xl font-bold text-blue-700 mb-2">{exp.company}</h3>
-                <div className="text-sm text-gray-600 mb-1">{exp.title}</div>
-                <div className="text-xs text-gray-500">{exp.period} | {exp.location}</div>
+              <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-background bg-surface dark:bg-surface-dark shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                <div className="w-2 h-2 bg-accent rounded-full" />
               </div>
-              <div className="md:w-2/3">
-                <ul className="list-disc pl-5 space-y-2 text-gray-700">
+              
+              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl bg-surface dark:bg-surface-dark border border-surface-border dark:border-surface-darkBorder shadow-sm hover:shadow-soft-hover dark:hover:shadow-soft-hover-dark transition-shadow duration-300">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2 gap-2">
+                  <h3 className="text-xl font-bold text-foreground">{exp.company}</h3>
+                  <span className="text-xs font-medium px-2.5 py-1 bg-surface-hover dark:bg-surface-darkHover text-foreground/70 rounded-full whitespace-nowrap">
+                    {exp.period}
+                  </span>
+                </div>
+                <div className="text-accent font-medium mb-4">{exp.title}</div>
+                <ul className="space-y-3 text-sm text-foreground/70">
                   {exp.highlights.map((h, i) => (
-                    <li key={i}>{h}</li>
+                    <li key={i} className="flex items-start gap-2">
+                      <svg className="w-4 h-4 text-accent/70 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span className="leading-relaxed">{h}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
