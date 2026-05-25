@@ -1,140 +1,106 @@
-# Full Stack Developer Light Portfolio Template
+# Rakesh Geddam — Portfolio
 
-[Demo](https://www.devportfoliotemplates.com/portfolio-templates/full-stack-developer-light)
+> **Full-Stack Engineer & AI/Data Specialist** · Detroit, MI · [rakeshge@umich.edu](mailto:rakeshge@umich.edu)
 
-## Getting Started
+[![Live Site](https://img.shields.io/badge/Live%20Site-rakeshgeddam.vercel.app-0ea5e9?style=flat-square&logo=vercel)](https://rakeshgeddam.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-rakeshge-0a66c2?style=flat-square&logo=linkedin)](https://linkedin.com/in/rakeshge)
+[![GitHub](https://img.shields.io/badge/GitHub-rakeshgeddam-181717?style=flat-square&logo=github)](https://github.com/rakeshgeddam)
+[![Resume](https://img.shields.io/badge/Resume-View%20PDF-ff6b6b?style=flat-square&logo=googledocs)](https://docs.google.com/document/d/1IHUkDVZpyLELh6aCLnAikBT-f4nwQxWA/edit?usp=sharing&ouid=109115267559826737312&rtpof=true&sd=true)
 
-You have two options to get started with this template:
+---
 
-### Option 1: Using Git Sparse Checkout
+## 👋 About
 
-If you want to clone only this specific template:
+I'm a Software Engineer with **4+ years of experience** building full-stack applications, real-time data pipelines, and AI/LLM-powered products across healthcare, logistics, and research domains.
+
+- 🎓 **M.S. Computer Science & Information Systems** — University of Michigan – Flint  
+- 💼 Ex-[Melo](https://melo.health) (AI healthcare), [UMich Research](https://umich.edu), [Tata Consultancy Services](https://tcs.com)  
+- 🔬 Published in **ASME IMECE 2024**  
+- 🚀 Currently **open to full-time roles** in Software Engineering, Data Engineering, or AI/ML  
+
+---
+
+## 🛠 Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| **Languages** | Python · TypeScript · Swift · JavaScript · SQL · Java |
+| **Frontend** | React · Next.js · Tailwind CSS · Framer Motion |
+| **Backend / APIs** | Node.js · FastAPI · Flask · REST · GraphQL |
+| **Data & ML** | Apache Spark · Kafka · Airflow · TensorFlow · PyTorch · Vector DB |
+| **AI / LLMs** | OpenAI API · Gemini 2.0 · LangChain · Fine-tuning · RAG |
+| **Cloud / DevOps** | AWS (EMR, S3, Lambda) · Docker · CI/CD · Linux · Git · Vercel |
+
+---
+
+## 🚀 Featured Projects
+
+| Project | Stack | Highlights |
+|---|---|---|
+| [FocusGuardian iOS App](https://fcs-grdn-website.vercel.app/) | Swift | AI-powered scheduling & notification blocking for ADHD productivity |
+| [AI Powered Tech Mentor](https://github.com/rakeshgeddam/AI_Powered_Tech_Mentor) | TypeScript / LLM APIs | Adaptive AI mentor platform for personalized learning journeys |
+| [Smart Code Editor](https://github.com/rakeshgeddam/Smart_Code_Editor) | Python / Vector DB | Retrieves error resolutions from historical logs; cuts debugging time |
+| [AWS EMR Data Pipeline](https://github.com/rakeshgeddam/AWS_EMR_ADHD) | PySpark / AWS EMR | Distributed batch analytics pipeline on cloud infrastructure |
+| [Real-Time Logistics Assistant](https://github.com/rakeshgeddam/Logistics_Assistant) | Kafka · Spark · Airflow | Sub-second event processing with live traffic API integration |
+| [IPL Data Transformation](https://github.com/rakeshgeddam/Data_Transformation_using_Apache_Spark) | Apache Spark | Production-grade ETL — partitioning, aggregation, schema enforcement |
+
+---
+
+## 🏗 Running Locally
 
 ```bash
-git clone --no-checkout https://github.com/devportfoliotemplates/devportfoliotemplates.git
-cd devportfoliotemplates
-git sparse-checkout init --cone
-git sparse-checkout set full-stack-developer-light-portfolio-template
-git checkout
-```
-
-### Option 2: Direct Download
-
-You can download this template as a ZIP file:
-
-1. Visit [download-directory.github.io](https://download-directory.github.io/)
-2. Paste the URL of this portfolio folder: `https://github.com/devportfoliotemplates/devportfoliotemplates/tree/main/full-stack-developer-light-portfolio-template`
-3. Download and extract the ZIP file
-
-### Running the Template
-
-Once you have the template:
-
-1. Install dependencies:
-
-```bash
+# 1. Install dependencies
 npm install
-# or
-yarn install
-# or
-pnpm install
+
+# 2. Start development server
+npm run dev
 ```
 
-2. Run the development server:
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+**Build for production:**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+npm run build && npm start
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser to see the portfolio.
+**Lint:**
 
-## Customization
+```bash
+npm run lint
+```
 
-### Personal Information
+---
 
-1. Update metadata in `app/layout.tsx`:
+## 🚢 Deployment
 
-   - Site title
-   - Description
-   - Open Graph metadata
-   - Favicon
+This portfolio deploys automatically to **Vercel** on every push to `main`.
 
-2. Modify content in `app/page.tsx`:
+To self-deploy:
+1. Fork this repository
+2. Connect it to [Vercel](https://vercel.com) via **Import Project**
+3. Vercel auto-detects Next.js — click **Deploy**
 
-   - Hero section
-   - About section
-   - Projects
-   - Contact information
+Your site will be live at `https://<your-repo>.vercel.app`.
 
-3. Replace assets:
-   - Replace images in the `public` directory
-   - Update social media icons
-   - Modify logo if needed
+---
 
-### Styling
+## 📁 Customisation
 
-1. Colors and Theme:
+| What to change | File |
+|---|---|
+| Name, title, bio | `app/components/HeroSection.tsx`, `AboutSection.tsx` |
+| Projects list | `app/components/ProjectsSection.tsx` |
+| Work experience | `app/components/ExperienceSection.tsx` |
+| Skills | `app/components/SkillsSection.tsx` |
+| Publications | `app/components/PublicationsSection.tsx` |
+| Contact links | `app/components/ContactSection.tsx`, `NavBar.tsx` |
+| SEO metadata | `app/layout.tsx` |
+| Theme colours | `tailwind.config.ts` |
 
-   - Customize colors in `tailwind.config.js`
-   - Modify theme variables in `app/globals.css`
+---
 
-2. Typography:
+## 📄 License
 
-   - Update font families in `tailwind.config.js`
-   - Modify text sizes and weights
+MIT — feel free to fork and adapt for your own portfolio.
 
-3. Layout:
-   - Adjust spacing and padding in component files
-   - Modify responsive breakpoints in `tailwind.config.js`
-
-## Troubleshooting
-
-### Common Issues
-
-1. **Build Errors**
-
-   - Ensure all dependencies are installed
-   - Clear `.next` folder and node_modules
-   - Run `npm install` again
-
-2. **Styling Issues**
-
-   - Run `npm run build` to ensure TailwindCSS classes are generated
-   - Check for conflicting styles in `globals.css`
-
-3. **Image Loading**
-   - Verify images are in the correct format (PNG, JPG, WebP)
-   - Check image paths are correct
-   - Ensure images are in the `public` directory
-
-## Deployment
-
-Follow these steps to deploy your portfolio for free using GitHub and Vercel:
-
-1. Create a new GitHub repository
-
-2. Push your portfolio to GitHub
-
-3. Deploy with Vercel:
-   - Go to [Vercel](https://vercel.com)
-   - Sign up or log in with GitHub
-   - Click "New Project"
-   - Import your GitHub repository
-   - Vercel will automatically detect Next.js
-   - Click "Deploy"
-
-Your portfolio will be live in minutes with a free Vercel domain (e.g., `your-repo.vercel.app`). You can later add a custom domain in your Vercel project settings.
-
-## Support
-
-If you find these templates helpful, please consider:
-
-- Starring the repository ⭐
-- Sharing with other developers
-- [Buying me a coffee](https://www.buymeacoffee.com/andreiancu) ☕
-
-For issues and feature requests, please [create an issue](https://github.com/devportfoliotemplates/devportfoliotemplates/issues).
