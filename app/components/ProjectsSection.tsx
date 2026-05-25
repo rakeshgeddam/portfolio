@@ -6,42 +6,42 @@ const projects = [
 	{
 		name: 'FocusGuardian iOS App',
 		url: 'https://fcs-grdn-website.vercel.app/',
-		description: 'Swift iOS application featuring AI-powered scheduling and intelligent notification blocking to enhance productivity and focus.',
+		description: 'Swift iOS app with AI-powered scheduling and intelligent notification blocking. Helps users reclaim focus time — originally built to assist users with ADHD productivity challenges.',
 		language: 'Swift',
 		thumbnail: '/thumbnails/focusguardian.svg',
 	},
 	{
 		name: 'AI Powered Tech Mentor',
 		url: 'https://github.com/rakeshgeddam/AI_Powered_Tech_Mentor',
-		description: 'AI-powered mentor platform for personalized tech guidance and learning. Built with modern web technologies to provide an interactive learning experience.',
+		description: 'Personalized AI mentor platform built with TypeScript/Next.js and LLM APIs. Delivers context-aware guidance that adapts to each learner\'s skill level and goals.',
 		language: 'TypeScript',
 		thumbnail: '/thumbnails/ai_mentor.png',
 	},
 	{
 		name: 'Smart Code Editor',
 		url: 'https://github.com/rakeshgeddam/Smart_Code_Editor',
-		description: 'Code editor powered by Vector Database to retrieve error support from historical logs. Enhances developer productivity with intelligent suggestions.',
+		description: 'AI-enhanced code editor powered by a Vector Database that retrieves error resolutions from historical logs, dramatically cutting debugging time with intelligent, context-aware suggestions.',
 		language: 'Python',
 		thumbnail: '/thumbnails/samrt-code-editor.png',
 	},
 	{
-		name: 'AWS EMR ADHD',
+		name: 'AWS EMR Data Pipeline',
 		url: 'https://github.com/rakeshgeddam/AWS_EMR_ADHD',
-		description: 'Project leveraging AWS EMR for scalable data processing. Designed to handle large datasets efficiently using distributed computing.',
+		description: 'End-to-end big-data pipeline on AWS EMR using PySpark. Processes large ADHD research datasets via distributed computing, enabling scalable batch analytics on cloud infrastructure.',
 		language: 'Python',
 		thumbnail: '/thumbnails/AWS_EMR.png',
 	},
 	{
 		name: 'Real-Time Logistics Assistant',
 		url: 'https://github.com/rakeshgeddam/Logistics_Assistant',
-		description: 'End-to-end real-time event logistics assistant with Kafka, Spark Streaming, and Airflow, integrating traffic APIs and automated workflows.',
+		description: 'Real-time event logistics platform using Kafka, Spark Streaming, and Airflow. Integrates live traffic APIs and automated workflows for sub-second event processing at scale.',
 		language: 'Data Engineering',
 		thumbnail: '/thumbnails/logistics.svg',
 	},
 	{
 		name: 'IPL Data Transformation',
 		url: 'https://github.com/rakeshgeddam/Data_Transformation_using_Apache_Spark',
-		description: 'Data Transformation project using Apache Spark on IPL cricket tournament dataset, demonstrating scalable data processing capabilities.',
+		description: 'High-performance ETL pipeline with Apache Spark on the IPL cricket dataset. Demonstrates production-grade data transformation patterns — partitioning, aggregation, and schema enforcement.',
 		language: 'Apache Spark',
 		thumbnail: '/thumbnails/spark.svg',
 	},
@@ -58,7 +58,7 @@ export default function ProjectsSection() {
 					className="mb-16"
 				>
 					<h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Featured Projects</h2>
-					<p className="text-foreground/60 mt-4 max-w-2xl text-lg">A selection of my recent work in software engineering, AI, and data processing.</p>
+					<p className="text-foreground/60 mt-4 max-w-2xl text-lg">Shipped across iOS, full-stack web, AI/LLM, and cloud data engineering — each project solves a real problem.</p>
 				</motion.div>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
